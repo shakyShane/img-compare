@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.0.0
+3 info using node@v0.10.26
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add spec="." args=[".",null]
+7 verbose parsed spec { raw: '.',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: null,
+7 verbose parsed spec   rawSpec: '.',
+7 verbose parsed spec   spec: '/Users/shakyshane/code/img-compare',
+7 verbose parsed spec   type: 'local' }
+8 verbose cache add local package /Users/shakyshane/code/img-compare
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/shakyshane/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/Users/shakyshane/.npm/img-compare/1.0.0/package.tgz', '.' ]
+12 verbose tarball /Users/shakyshane/.npm/img-compare/1.0.0/package.tgz
+13 verbose folder .
+14 info prepublish img-compare@1.0.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/shakyshane/.npm/1f1177db-tar.lock
+17 silly lockFile 3494b160-pm-img-compare-1-0-0-package-tgz tar:///Users/shakyshane/.npm/img-compare/1.0.0/package.tgz
+18 verbose lock tar:///Users/shakyshane/.npm/img-compare/1.0.0/package.tgz /Users/shakyshane/.npm/3494b160-pm-img-compare-1-0-0-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 3494b160-pm-img-compare-1-0-0-package-tgz tar:///Users/shakyshane/.npm/img-compare/1.0.0/package.tgz
+22 silly lockFile 3494b160-pm-img-compare-1-0-0-package-tgz tar:///Users/shakyshane/.npm/img-compare/1.0.0/package.tgz
+23 silly lockFile 0ef3595a-ne-npm-img-compare-1-0-0-package /Users/shakyshane/.npm/img-compare/1.0.0/package
+24 verbose lock /Users/shakyshane/.npm/img-compare/1.0.0/package /Users/shakyshane/.npm/0ef3595a-ne-npm-img-compare-1-0-0-package.lock
+25 silly lockFile 0ef3595a-ne-npm-img-compare-1-0-0-package /Users/shakyshane/.npm/img-compare/1.0.0/package
+26 silly lockFile 0ef3595a-ne-npm-img-compare-1-0-0-package /Users/shakyshane/.npm/img-compare/1.0.0/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'img-compare',
+29 silly publish   version: '1.0.0',
+29 silly publish   description: '',
+29 silly publish   main: 'index.js',
+29 silly publish   directories: { test: 'test' },
+29 silly publish   dependencies: { 'fs-extra': '^0.12.0', minimist: '^1.1.0' },
+29 silly publish   devDependencies: {},
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/shakyShane/img-compare.git' },
+29 silly publish   author: '',
+29 silly publish   license: 'ISC',
+29 silly publish   bugs: { url: 'https://github.com/shakyShane/img-compare/issues' },
+29 silly publish   homepage: 'https://github.com/shakyShane/img-compare',
+29 silly publish   gitHead: 'f4c0c8ec4031b32b7c88d84d475dfd4df024a432',
+29 silly publish   readme: 'ERROR: No README data found!',
+29 silly publish   _id: 'img-compare@1.0.0',
+29 silly publish   _shasum: '6918b74a3769a47679cbf7a76e04d23298b03dba',
+29 silly publish   _from: '.' }
+30 verbose mapToRegistry name img-compare
+31 verbose mapToRegistry uri https://registry.npmjs.org/img-compare
+32 verbose publish registryBase https://registry.npmjs.org/
+33 verbose request on initialization, where is /img-compare
+34 verbose request after pass 1, where is /img-compare
+35 verbose request url raw /img-compare
+36 verbose request resolving registry [ 'https://registry.npmjs.org/', './img-compare' ]
+37 verbose request after pass 2, where is https://registry.npmjs.org/img-compare
+38 verbose request sending authorization for write operation
+39 info attempt registry request try #1 at 21:21:58
+40 verbose request id 34fff8e15fc7ad5d
+41 http request PUT https://registry.npmjs.org/img-compare
+42 http 403 https://registry.npmjs.org/img-compare
+43 verbose headers { date: 'Wed, 12 Nov 2014 21:21:59 GMT',
+43 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+43 verbose headers   'content-type': 'application/json',
+43 verbose headers   'cache-control': 'max-age=60',
+43 verbose headers   'content-length': '2203',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   'x-served-by': 'cache-lax1421-LAX',
+43 verbose headers   'x-cache': 'MISS',
+43 verbose headers   'x-cache-hits': '0',
+43 verbose headers   'x-timer': 'S1415827319.582244,VS0,VE142',
+43 verbose headers   'keep-alive': 'timeout=10, max=50',
+43 verbose headers   connection: 'Keep-Alive' }
+44 error publish Failed PUT 403
+45 verbose stack Error: forbidden cannot modify pre-existing version: 1.0.0
+45 verbose stack old={"name":"img-compare","version":"1.0.0","description":"","main":"index.js","directories":{"test":"test"},"dependencies":{"fs-extra":"^0.12.0","minimist":"^1.1.0"},"devDependencies":{},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/shakyShane/img-compare.git"},"author":"","license":"ISC","bugs":{"url":"https://github.com/shakyShane/img-compare/issues"},"homepage":"https://github.com/shakyShane/img-compare","gitHead":"0bd4ad204caef746c2d3161a397ee7f318b06b0e","_id":"img-compare@1.0.0","_shasum":"3c98fa20b689aa3f7c715fba486e3e962fe4c341","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"shakyshane","email":"shakyshane@gmail.com"},"maintainers":[{"name":"shakyshane","email":"shakyshane@gmail.com"}],"dist":{"shasum":"3c98fa20b689aa3f7c715fba486e3e962fe4c341","tarball":"http://registry.npmjs.org/img-compare/-/img-compare-1.0.0.tgz"}}
+45 verbose stack new={"name":"img-compare","version":"1.0.0","description":"","main":"index.js","directories":{"test":"test"},"dependencies":{"fs-extra":"^0.12.0","minimist":"^1.1.0"},"devDependencies":{},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/shakyShane/img-compare.git"},"author":"","license":"ISC","bugs":{"url":"https://github.com/shakyShane/img-compare/issues"},"homepage":"https://github.com/shakyShane/img-compare","gitHead":"f4c0c8ec4031b32b7c88d84d475dfd4df024a432","readme":"ERROR: No README data found!","_id":"img-compare@1.0.0","_shasum":"6918b74a3769a47679cbf7a76e04d23298b03dba","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"shakyshane","email":"shakyshane@gmail.com"},"maintainers":[{"name":"shakyshane","email":"shakyshane@gmail.com"}],"dist":{"shasum":"6918b74a3769a47679cbf7a76e04d23298b03dba","tarball":"http://registry.npmjs.org/img-compare/-/img-compare-1.0.0.tgz"}}: img-compare
+45 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:261:14)
+45 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:198:65)
+45 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+45 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
+45 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+45 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
+45 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+45 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+45 verbose stack     at _stream_readable.js:920:16
+45 verbose stack     at process._tickCallback (node.js:415:13)
+46 verbose statusCode 403
+47 verbose pkgid img-compare
+48 verbose cwd /Users/shakyshane/code/img-compare
+49 error Darwin 14.0.0
+50 error argv "node" "/usr/local/bin/npm" "publish"
+51 error node v0.10.26
+52 error npm  v2.0.0
+53 error code E403
+54 error forbidden cannot modify pre-existing version: 1.0.0
+54 error old={"name":"img-compare","version":"1.0.0","description":"","main":"index.js","directories":{"test":"test"},"dependencies":{"fs-extra":"^0.12.0","minimist":"^1.1.0"},"devDependencies":{},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/shakyShane/img-compare.git"},"author":"","license":"ISC","bugs":{"url":"https://github.com/shakyShane/img-compare/issues"},"homepage":"https://github.com/shakyShane/img-compare","gitHead":"0bd4ad204caef746c2d3161a397ee7f318b06b0e","_id":"img-compare@1.0.0","_shasum":"3c98fa20b689aa3f7c715fba486e3e962fe4c341","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"shakyshane","email":"shakyshane@gmail.com"},"maintainers":[{"name":"shakyshane","email":"shakyshane@gmail.com"}],"dist":{"shasum":"3c98fa20b689aa3f7c715fba486e3e962fe4c341","tarball":"http://registry.npmjs.org/img-compare/-/img-compare-1.0.0.tgz"}}
+54 error new={"name":"img-compare","version":"1.0.0","description":"","main":"index.js","directories":{"test":"test"},"dependencies":{"fs-extra":"^0.12.0","minimist":"^1.1.0"},"devDependencies":{},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/shakyShane/img-compare.git"},"author":"","license":"ISC","bugs":{"url":"https://github.com/shakyShane/img-compare/issues"},"homepage":"https://github.com/shakyShane/img-compare","gitHead":"f4c0c8ec4031b32b7c88d84d475dfd4df024a432","readme":"ERROR: No README data found!","_id":"img-compare@1.0.0","_shasum":"6918b74a3769a47679cbf7a76e04d23298b03dba","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"shakyshane","email":"shakyshane@gmail.com"},"maintainers":[{"name":"shakyshane","email":"shakyshane@gmail.com"}],"dist":{"shasum":"6918b74a3769a47679cbf7a76e04d23298b03dba","tarball":"http://registry.npmjs.org/img-compare/-/img-compare-1.0.0.tgz"}}: img-compare
+55 error If you need help, you may report this error at:
+55 error     <http://github.com/npm/npm/issues>
+56 verbose exit [ 1, true ]
