@@ -2,13 +2,13 @@ var compare = require("./lib/compare");
 
 var defaults = {
     cwd: process.cwd(),
-    out: "diff2.png"
+    output: "diff.png"
 }
 
 module.exports = function (files, config, cb) {
 
-    config.cwd = config.cwd || defaults.cwd;
-    config.out = config.out || defaults.out;
+    config.cwd    = config.cwd    || defaults.cwd;
+    config.output = config.output || defaults.output;
 
     compare(files, config, cb);
 };
