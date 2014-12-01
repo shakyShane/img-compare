@@ -11,3 +11,9 @@ describe("merging cmd line args", function(){
         assert.equal(out, "-gamma 2 -output test/fixtrues/diff2.png -threshold 0");
     });
 });
+
+describe("transforming args", function () {
+    it("should convert args", function () {
+
+    });
+});
