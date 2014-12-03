@@ -30,5 +30,11 @@ OUTFILE:/Users/shakyshane/code/img-compare/diff.png:
             assert.equal(out.get('report').get('numpix'), "6069");
             done();
         });
-    })
+    });
+    it("returns error object when file not found", function (done) {
+        comp(["test/fixtures/01.pngs", "test/fixtures/02.png"], {}, function (err, out) {
+            assert.equal(err.name, "Error");
+            done();
+        });
+    });
 });
