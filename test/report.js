@@ -25,9 +25,15 @@ OUTFILE:/Users/shakyshane/code/img-compare/diff.png:
         assert.equal(actual.get('report').get('outfile'), example.report.outfile);
         assert.equal(actual.get('report').get('numpix'), example.report.numpix);
     });
-    it("can run", function (done) {
+    it("can run a failure", function (done) {
         comp(["test/fixtures/01.png", "test/fixtures/02.png"], {}, function (err, out) {
             assert.equal(out.get('report').get('numpix'), "6069");
+            done();
+        });
+    });
+    it("can run a success", function (done) {
+        comp(["test/fixtures/01.png", "test/fixtures/03.png"], {}, function (err, out) {
+            assert.equal(out.get('status'), 'success');
             done();
         });
     });
