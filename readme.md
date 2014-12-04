@@ -2,6 +2,8 @@
 
 Image comparisons without any other system dependencies.
 
+If you're just comparing PNG's, use [node-resemble.js](https://github.com/lksv/node-resemble.js) instead. It's a *lot* faster.
+
 ```js
 var comp = require("img-compare");
 
